@@ -22,7 +22,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", form);
+      await axios.post("https://pcos-backend-b4qf.onrender.com/api/auth/register", form);
 
       alert("Registration successful");
       navigate("/login");

@@ -17,7 +17,7 @@ function Profile() {
   const fetchProfile = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/profile/${userId}`
+        `https://pcos-backend-b4qf.onrender.com/api/profile/${userId}`
       );
 
       const data = await res.json();
@@ -55,7 +55,7 @@ function Profile() {
   const saveProfile = async () => {
     try {
       await fetch(
-        "http://localhost:5000/api/profile",
+        "https://pcos-backend-b4qf.onrender.com/api/profile",
         {
           method: "POST",
           headers: {

@@ -16,7 +16,7 @@ function Dashboard() {
         localStorage.getItem("userId");
 
       const res = await axios.get(
-        `http://localhost:5000/api/predictions/${userId}`
+        `https://pcos-backend-b4qf.onrender.com/api/predictions/${userId}`
       );
 
       setPredictions(res.data);
