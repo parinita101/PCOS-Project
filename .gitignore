@@ -35,7 +35,6 @@ __pycache__/
 # ML model files / datasets
 # (ignore if private or too large)
 # =========================
-*.pkl
 *.joblib
 *.h5
 *.csv
@@ -44,7 +43,6 @@ data/
 datasets/
 
 # If your model should NOT be public:
-pcos_model.pkl
 
 # =========================
 # Logs
