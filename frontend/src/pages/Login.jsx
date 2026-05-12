@@ -22,7 +22,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "https://pcos-backend-b4qf.onrender.com/api/users/login",
+        "https://pcos-backend-b4qf.onrender.com/api/auth/login",
         form
       );
 
