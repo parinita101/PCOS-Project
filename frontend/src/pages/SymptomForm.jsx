@@ -27,7 +27,7 @@ function SymptomForm() {
     try {
       // Step 1: ML prediction
       const res = await axios.post(
-        "http://127.0.0.1:5001/predict",
+        "https://pcos-backend-b4qf.onrender.com/predict",
         {
           age: Number(form.age),
           weight: Number(form.weight),
@@ -52,7 +52,7 @@ function SymptomForm() {
 
       // Step 2: Save to MongoDB
       const saveRes = await axios.post(
-  "http://localhost:5000/api/predictions",
+  "https://pcos-backend-b4qf.onrender.com/api/predictions",
   {
     userId:
       localStorage.getItem(
