@@ -27,7 +27,7 @@ function SymptomForm() {
     try {
       // Step 1: ML prediction
       const res = await axios.post(
-        "https://pcos-backend-b4qf.onrender.com/predict",
+        "https://pcos-ml-service.onrender.com/predict",
         {
           age: Number(form.age),
           weight: Number(form.weight),
